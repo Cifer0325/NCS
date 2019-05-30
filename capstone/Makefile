@@ -56,12 +56,12 @@ compile: googlenet tiny_yolo
 .PHONY: run_py
 run_py: prereqs ilsvrc12 compile
 	@echo "\nmaking run_py"
-	python3 ./street_cam_threaded.py
+	python3 ./capstone.py
 
 .PHONY: run
 run: all
 	@echo "\nmaking run"
-	python3 ./street_cam_threaded.py
+	python3 ./capstone.py
 
 .PHONY: install-reqs
 install-reqs: 
